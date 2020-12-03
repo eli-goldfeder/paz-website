@@ -2,3 +2,9 @@ body {
     direction: rtl;
     text-align: right;
 }
+
+#container {
+    display: flex;
+    width: 1920px;
+    height: 754px;
+}
