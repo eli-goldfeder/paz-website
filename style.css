@@ -6,13 +6,16 @@ body {
     line-height: 1;
     margin: 0;
 }
+/* Header */
 
 #header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     height: 105px;
+    background: linear-gradient(to bottom, 	#808080 92%, #A9A9A9 8%)
 }
+
 #header > #logo {
     position: relative;
     top: 25px;
@@ -58,9 +61,6 @@ body {
     width: 150px;
 }
 
-#header {
-    background: linear-gradient(to bottom, 	#808080 92%, #A9A9A9 8%);
- }
 
 #search-box > a,
 .sub-menu,
@@ -107,10 +107,12 @@ body {
 .items-menu {
     background: linear-gradient(to top,#808080 98%, #A9A9A9 2%);
 }
+
 .items:hover {
     background-color: #C0C0C0;
 }
 
+/* About-us Section */
 
  section#about-us {
     display: flex;
@@ -118,14 +120,6 @@ body {
     justify-content: center;
     margin: auto;
     width: 293px;
-}
-section > figure {
-    margin: 5px;
-}
-#about-us >figure > img {
-    border-bottom-right-radius: 15px;
-    padding: 30px 0 0 0;
-    margin: auto;
 }
 
 #about-us > figure > figcaption {
@@ -135,26 +129,22 @@ section > figure {
     width: 238px;
     height: 77px;
     padding: 10px;
-   
     font-size: 13px;
     color: white;
     background-color: rgb(128, 128, 128, 0.9);
     border-bottom-right-radius: 15px;
 }
-section h3 {
-    margin: 0;
-    font-size: 14px;
+
+section > figure {
+    margin: 5px;
 }
-section p {
-    margin: 0;
-    padding: 2px;
+
+#about-us > figure > img {
+    border-bottom-right-radius: 15px;
+    padding: 30px 0 0 0;
+    margin: auto;
 }
-figcaption > .read-more,
-figcaption > .read-more-img {
-    position: relative;
-    right: 180px;
-    color: white;
-}
+
 
 #trade-txt > .read-more,
 #trade-txt > .read-more-img {
@@ -166,6 +156,27 @@ figcaption > .read-more-img {
     top: 14px;
 }
 
+
+#about-us h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+#about-us p {
+    margin: 0;
+    padding: 2px;
+}
+
+figcaption > .read-more,
+figcaption > .read-more-img {
+    position: relative;
+    right: 180px;
+    color: white;
+}
+
+
 figcaption a:hover {
     color: blue;
 }
+
+/* Section two */
