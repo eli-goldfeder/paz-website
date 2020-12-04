@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>פז עמוד הבית</title>
 </head>
 <body>
-  <div id="container">
       <header id="header">
         <div id="search-box">
-            <a id="english" href="#">English</a>
+            <a id="english-lang" href="#">English</a>
             <input type="search" id="search-input" name="search" placeholder="רשום מילת חיפוש" />
             <input type="image" id="search-btn" name="submit" src="./images/search_button.png" />
         </div>
+
         <div id="logo">
-            <img id="logo" src="./images/paz_logo.png" alt="paz-log">
+           <a href="#" id="logo-link" src="logo"><img id="logo-img" src="./images/paz_logo.png" alt="paz-log"></a>
         </div>
-        <div class="home">
-            <a href="#" class="home-menu"><img src="./images/menu_home_blue.png" alt="home-image" class="home-img"></a>
-        </div>
+
         <nav id="nav">
             <ul id="main-menu">
+                <li id="home-btn"><a href="#" id="home-menu"><img src="./images/menu_home_blue.png" alt="home-image" id="home-img"></a></li>
                 <li class="sub-menu">אודות
                     <ul class="items-menu">
-                        <li class="items"><a href="#" class="about">אודות</a></li>
+                        <li class="items"> <a href="#" class="about">אודות</a></li>
                         <li class="items"><a href="#" class="about">היסטוריה</a></li>
                         <li class="items"><a href="#" class="about">חזון וערכים</a></li>
                         <li class="items"><a href="#" class="about">מבנה הקבוצה</a></li>
@@ -92,6 +91,5 @@
       <footer id="footer">
 
       </footer>
-  </div> 
 </body>
 </html>
