@@ -112,5 +112,60 @@ body {
 }
 
 
+ section#about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 293px;
+}
+section > figure {
+    margin: 5px;
+}
+#about-us >figure > img {
+    border-bottom-right-radius: 15px;
+    padding: 30px 0 0 0;
+    margin: auto;
+}
 
+#about-us > figure > figcaption {
+    position: relative;
+    top: -105px;
+    right: 5px;
+    width: 238px;
+    height: 77px;
+    padding: 10px;
+   
+    font-size: 13px;
+    color: white;
+    background-color: rgb(128, 128, 128, 0.9);
+    border-bottom-right-radius: 15px;
+}
+section h3 {
+    margin: 0;
+    font-size: 14px;
+}
+section p {
+    margin: 0;
+    padding: 2px;
+}
+figcaption > .read-more,
+figcaption > .read-more-img {
+    position: relative;
+    right: 180px;
+    color: white;
+}
 
+#trade-txt > .read-more,
+#trade-txt > .read-more-img {
+    top: 1px;
+} 
+
+#refining-txt > .read-more,
+#refining-txt > .read-more-img {
+    top: 14px;
+}
+
+figcaption a:hover {
+    color: blue;
+}
