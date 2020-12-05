@@ -31,19 +31,18 @@ body {
 #search-box > #search-input {
     position: relative;
     width: 132px;
-    height: 19;
     top: -5px;
     right: 3px;
     border-top-right-radius: 10px;
 }
 
-#search-box > a {
+#search-box a#english-lang {
     position: relative;
-    top: -6px;
-    font-size: 12px;
+    top: -5px;
+    font-size: 13px;
 }
 
-#main-menu {
+#menu {
     display: flex;
     justify-content: space-between;
     margin: 5px;
@@ -51,34 +50,29 @@ body {
     height: 30px;
 }
 
-.sub-menu:hover .items-menu {
-    display: flex;
-    flex-direction: column; 
-    position: absolute;
-    top: 30px;
-    padding: 0;
-    margin: 3px;
-    width: 150px;
-}
-
-
-#search-box > a,
-.sub-menu,
-.items-menu > li > a {
+#search-box > a#english-lang,
+.main-menu > a,
+.dropdown-items > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.main-menu > a {
     font-size: 15px;
 }
 
-
-#search-box > a:hover,
-.sub-menu:hover,
-.items-menu > li > a:hover  {
-    color: blue;
-    text-decoration: underline;
+#home-menu {
+    text-decoration: none;
 }
 
+#search-box > a:hover,
+.main-menu:hover,
+#menu > li > a:hover,
+.dropdown-menu > li > a:hover  {
+    color: #005ca0;
+    text-decoration: underline;
+}
 
 #nav {
     position: relative;
@@ -86,32 +80,47 @@ body {
     left: 110px;
 }
 
+#menu span.seperator {
+    color: silver;
+    padding-right: 7px;
+}
+
 #home-btn,
-.items-menu > li,
-.sub-menu {
+.dropdown-menu > li,
+.main-menu {
     list-style: none; 
 }
 
-.sub-menu > .items-menu {
+.dropdown-content {
+    position: absolute;
     display: none;
+    top: 30px;
+    background-color: #C0C0C0;
 } 
 
-.items-menu > li {
+.main-menu:hover .dropdown-content {
+  display: block;
+  position: absolute;
+}
+
+.dropdown-menu > li.dropdown-items {
     text-align: right;
     padding: 4px;
     text-decoration: none;
     border-bottom: 1px solid white;
     height: 25px;  
 }
+.dropdown-menu > li.dropdown-items:hover {
+    background-color: grey;
+}
 
-.items-menu {
+.dropdown-menu {
     background: linear-gradient(3deg, rgba(152,152,152,1) 89%, rgba(192,192,192,1) 100%);
 }
 
-.items:hover {
-    background-color: #C0C0C0;
+ul.dropdown-menu {
+    padding: 0;
 }
-
 /* About-us Section */
 
 section#about-us {
@@ -173,7 +182,7 @@ figcaption > .read-more-img {
 
 
 figcaption a:hover {
-    color: blue;
+    color: #005ca0;
 }
 
 /* Section Ads */
@@ -244,7 +253,7 @@ position: relative;
 #credit-card #credit-card-text a:hover,
 #changing-content #changing-text a:hover,
 #our-locations #locations-text a:hover {
-   color: blue; 
+   color: #005ca0; 
 }
 
 /* Footer */
@@ -263,7 +272,7 @@ footer {
 
 #footer-nav > ul li{
    list-style: none;
-   margin-right: 6px;
+    margin-right: 6px;
 }
 .bottom-items > a {
     font-size: 14px;
@@ -272,6 +281,10 @@ footer {
 }
 
 .bottom-items > a:hover {
-    color: blue;
+    color: #005ca0;
     text-decoration: underline;
+}
+
+#bottom-menu > .seperator {
+    color: white;
 }
