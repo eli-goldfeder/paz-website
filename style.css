@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     height: 105px;
-    background: linear-gradient(to bottom, 	#808080 92%, #A9A9A9 8%)
+    background: linear-gradient(180deg, rgba(152,152,152,1) 89%, rgba(192,192,192,1) 100%);
 }
 
 #header > #logo {
@@ -48,7 +48,7 @@ body {
     justify-content: space-between;
     margin: 5px;
     width: 750px;
-    height: 33px;
+    height: 30px;
 }
 
 .sub-menu:hover .items-menu {
@@ -82,7 +82,7 @@ body {
 
 #nav {
     position: relative;
-    height: 33px;
+    height: 35px;
     left: 110px;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 .items-menu {
-    background: linear-gradient(to top,#808080 98%, #A9A9A9 2%);
+    background: linear-gradient(3deg, rgba(152,152,152,1) 89%, rgba(192,192,192,1) 100%);
 }
 
 .items:hover {
@@ -114,12 +114,9 @@ body {
 
 /* About-us Section */
 
- section#about-us {
+section#about-us {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 293px;
+    justify-content: center;  
 }
 
 #about-us > figure > figcaption {
@@ -179,4 +176,73 @@ figcaption a:hover {
     color: blue;
 }
 
-/* Section two */
+/* Section Ads */
+
+#ads {
+    display: flex;
+    justify-content: center;
+}
+
+#ads > section {
+box-sizing: border-box;
+position: relative;
+ width: 285px;
+ height: 216px;
+ border: 1px solid silver;
+ margin: 10px;
+ top: -100px;
+ left: 2px;
+ padding: 12px;
+ background: linear-gradient(69deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 67%);
+ border-top-right-radius: 15px;
+}
+
+#ads > section > h3 {
+    position: relative;
+    top: -15px;
+    font-size: 15px;
+    border-bottom: 0.5px solid silver;
+    padding-bottom: 10px;
+}
+
+
+#ads > section#stations-map #map-img {
+   position: relative;
+   top: -30px;
+   left: -170px;
+}
+
+#stations-map  #locations-text {
+    display: flex;
+    flex-direction: column;
+}
+#stations-map #locations-text > .locations {
+    position: relative;
+    top: -190px;
+    padding: 5px;
+}
+
+#credit-card #card-pic,
+#changing-content #changing-img {
+    position: relative;
+    top: -18px; 
+}
+
+#credit-card #credit-card-text,
+#changing-content #changing-text {
+    position: relative;
+    left: -140px;
+}
+
+#credit-card #credit-card-text a,
+#changing-content #changing-text a,
+#our-locations #locations-text a {
+    font-size: 13px;
+    color: grey;
+}
+
+#credit-card #credit-card-text a:hover,
+#changing-content #changing-text a:hover,
+#our-locations #locations-text a:hover {
+   color: blue; 
+}
