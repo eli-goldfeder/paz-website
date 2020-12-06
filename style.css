@@ -13,6 +13,7 @@ body {
 li {
     list-style: none;
 }
+
 /* Header */
 #header {
     display: flex;
@@ -121,7 +122,6 @@ ul.dropdown-menu {
 }
 
 /* About-us Section */
-
 section#about-us {
     display: flex;
     justify-content: center;  
@@ -176,7 +176,6 @@ figcaption a:hover {
 figcaption .read-more-img {
 position: relative;
 top: 2px;
-font-weight: bold;
 margin-right: 6px;
 transform: rotate(270deg);
 }
@@ -250,9 +249,9 @@ figcaption#locations-img-txt a {
 
 figcaption .more-details-img {
    position: relative;
+   right: 4px;
+   bottom: -1px;
    color: #FF4500;
-   top: 1px;
-   right: 6px;
    transform: rotate(270deg);
 }
 
@@ -260,6 +259,7 @@ figcaption.ads-img-txt a:hover,
 figcaption#locations-img-txt a:hover {
     color: #005ca0;
 }
+
 /* Footer */
 footer {
     position: absolute;
@@ -292,3 +292,5 @@ footer {
 #bottom-menu > .bottom-seperator {
     color: white;
 }
+
+/* Conatcts page*/

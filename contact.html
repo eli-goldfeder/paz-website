@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>פז עמוד הבית</title>
+    <title>פז צור קשר</title>
 </head>
 <body>
         <header id="header">
@@ -110,92 +110,86 @@
         </nav>
       </header>
 
-      <main id="main">
-        <section id="about-us">
-            <figure id="trade">
-                <img id="trade-img" src="images/1908364606615453350.JPG" alt="paz-station">
-                <figcaption id="trade-txt">
-                    <h3>קמעונאות ומסחר</h3>
-                    <p>
-                    במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...
-                    </p>
-                    <a class="read-more" href="#">קרא עוד
-                        <span class="read-more-img">∴</span> 
-                    </a>
-                </figcaption>
-            </figure>
+      <main id="contact-forms">
+        <aside id="side-menu">
+            <nav id="side-menu-nav">
+                <ul>
+                    <li>
+                        <span id="triangle"></span>
+                        צור קשר
+                    </li>
+                </ul>
+            </nav>
+        </aside>
 
-            <figure id="refining">
-                <img id="refining-img" src="images/Picture-046410251500.jpg" alt="refining-station">
-                <figcaption id="refining-txt">
-                    <h3>זיקוק</h3>
-                    <p>
-                        פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...
-                    </p>
-                    <a class="read-more" href="#">קרא עוד
-                        <span class="read-more-img">∴</span> 
-                    </a>
-                </figcaption>
-            </figure>
-          
-            <figure id="services">
-                <img id="services-img" src="images/פזקר_-291_354410564000.jpg" alt="services" >
-                <figcaption id="services-txt">
-                    <h3>תעשיות ושירותים</h3>
-                    <p>
-                        תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...
-                    </p>
-                    <a class="read-more" href="#">קרא עוד
-                        <span class="read-more-img">∴</span> 
-                    </a>
-                </figcaption>
-            </figure>
+        <section id="breadcrumps">
+            <a href="index.html" class="breadcrumps-nav">עמוד הבית</a>
+            <span class="breadcrumps-seperator"> > </span>
+            <span class="breadcrumps-txt">צור קשר</span>
         </section>
 
-            <section id="ads">
-                <section id="credit-card">
-                    <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                    <figure class="ads-img" id="card-img">
-                        <img src="images/paz_250x110059890678.jpg" alt="card-img" id="card-pic">
-                        <figcaption class="ads-img-txt">
-                            <a class="more-details" href="#">לפרטים נוספים
-                                <span class="more-details-img">∴</span> 
-                            </a>
-                        </figcaption>
-                    </figure>
-             </section>
+        <section id="contact-form">
+            <h3 id="form-title">צור קשר</h3>
+            <p id="contact-p">
+                ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :
+                * השדות המסומנים בכוכבית (*) הינם שדות חובה
+            </p>
+            <p id="p-must-fill">* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
 
-             <section id="changing-content">
-                    <h3 id="changing-title">טיפז</h3>
-                    <figure class="ads-img" id="changing-pic">
-                        <img src="images/paz_250x110059890678.jpg" alt="tipaz" id="changing-img">
-                        <figcaption class="ads-img-txt">
-                            <a class="more-details" href="#">לפרטים נוספים
-                                <span class="more-details-img">∴</span> 
-                            </a>
-                        </figcaption>
-                    </figure>
-             </section>
+            <form id="form">
+                <div>
+                    <label for="first-name">* שם פרטי</label>
+                    <input type="text" required id="first-name" name="first-name" />
+                </div>
+                <div>
+                    <label for="last-name">*  שם משפחה</label>
+                    <input type="text" required id="last-name" name="last-name"/>
+                </div>
+                <div>
+                    <label for="phone">* טלפון</label>
+                    <input type="text" required id="phone" name="phone" />
+                </div>
+                <div>
+                    <label for="email">* E-mail</label>
+                    <input type="email" required id="email" name="email" />
+                </div>
+                <div>
+                    <textarea id="form-txt" name="form-txt" rows="3" cols="20">תוכן הפניה</textarea>
+                </div>
+                <input type="submit" value="שלח" />
+            </form>
+        </section>
 
-            <section id="stations-map">
-                    <h3 >התחנות שלנו בדרך שלך</h3>
-                    <figure id="our-locations">
-                        <img id="map-img" src="images/map-transparent.png" alt="israel-map">
-                        <figcaption id="locations-img-txt">
-                            <a class="more-details" href="#">צפון
-                               <span class="more-details-img">∴</span> 
-                            </a>
+        <section id="contact-info">
+            <article class="article-info">
+                <h3>פרטי יצירת קשר</h3>
+                    <p class="article-content">
+                    <span class="strong-p">פז חברת נפט בע"מ </span>
+                    <br />
+                    יורו פארק, בניין הולנד
+                    <br />
+                     קיבוץ יקום 60972
+                    <br/>
+                     טל. שירות לקוחות 1-800-774-774
+                    <br />
+                     פקס.09-8641714
+                    </br>
+                    </p>
+            </article>
+        </section>
 
-                            <a class="more-details" href="#">מרכז
-                                <span class="more-details-img">∴</span> 
-                            </a>
-
-                            <a class="more-details" href="#">דרום
-                                 <span class="more-details-img">∴</span> 
-                            </a>
-                        </figcaption>
-                    </figure>
-             </section>
+        <section id="article-more">
+            <article class="article-info">
+                <h3>עוד בפז</h3>
+                < class="article-content">
+                    <span class="strong">ליצירת קשר עם דוברות פז</span>
+                    <br />
+                    <a href="#">לחצו כאן>></a>
+                    <br />
+                    <span class="strong">רוצים לעבוד בפז?</span>
+                    <a href="#">לחצו כאן>></a>
+                </p>
+            </article>
         </section>
       </main>
 
