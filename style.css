@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     direction: rtl;
     text-align: right;
@@ -6,8 +9,11 @@ body {
     line-height: 1;
     margin: 0;
 }
-/* Header */
 
+li {
+    list-style: none;
+}
+/* Header */
 #header {
     display: flex;
     justify-content: center;
@@ -25,7 +31,7 @@ body {
 #search-box {
     position: relative;
     top: -60px;
-    right: 830px;
+    right: 790px;
 }
 
 #search-box > #search-input {
@@ -52,7 +58,7 @@ body {
 
 #search-box > a#english-lang,
 .main-menu > a,
-.dropdown-items > a {
+.dropdown-items > a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -85,17 +91,11 @@ body {
     padding-right: 7px;
 }
 
-#home-btn,
-.dropdown-menu > li,
-.main-menu {
-    list-style: none; 
-}
-
 .dropdown-content {
     position: absolute;
     display: none;
     top: 30px;
-    background-color: #C0C0C0;
+    background: linear-gradient(3deg, rgba(152,152,152,1) 89%, rgba(192,192,192,1) 100%);
 } 
 
 .main-menu:hover .dropdown-content {
@@ -105,22 +105,21 @@ body {
 
 .dropdown-menu > li.dropdown-items {
     text-align: right;
+    width: 120px;
     padding: 4px;
     text-decoration: none;
-    border-bottom: 1px solid white;
-    height: 25px;  
+    border-bottom: 1px solid silver;
+    font-size: 15px;
+    font-weight: bold;
 }
 .dropdown-menu > li.dropdown-items:hover {
-    background-color: grey;
-}
-
-.dropdown-menu {
-    background: linear-gradient(3deg, rgba(152,152,152,1) 89%, rgba(192,192,192,1) 100%);
+    background-color: silver;
 }
 
 ul.dropdown-menu {
     padding: 0;
 }
+
 /* About-us Section */
 
 section#about-us {
@@ -133,7 +132,7 @@ section#about-us {
     top: -105px;
     right: 5px;
     width: 238px;
-    height: 77px;
+    height: 100px;
     padding: 10px;
     font-size: 13px;
     color: white;
@@ -142,7 +141,7 @@ section#about-us {
 }
 
 section > figure {
-    margin: 5px;
+    margin: 7px;
 }
 
 #about-us > figure > img {
@@ -151,62 +150,58 @@ section > figure {
     margin: auto;
 }
 
-
-#trade-txt > .read-more,
-#trade-txt > .read-more-img {
-    top: 1px;
-} 
-
-#refining-txt > .read-more,
-#refining-txt > .read-more-img {
-    top: 14px;
-}
-
-
 #about-us h3 {
     margin: 0;
     font-size: 14px;
 }
+
 
 #about-us p {
     margin: 0;
     padding: 2px;
 }
 
-figcaption > .read-more,
-figcaption > .read-more-img {
-    position: relative;
-    right: 180px;
-    color: white;
+figcaption > .read-more {
+    display: flex;
+    justify-content: flex-end;
 }
 
+figcaption a {
+    color: white;
+}
 
 figcaption a:hover {
     color: #005ca0;
 }
+figcaption .read-more-img {
+position: relative;
+top: 2px;
+font-weight: bold;
+margin-right: 6px;
+transform: rotate(270deg);
+}
 
-/* Section Ads */
+/* Section Ads  */
 
-#ads {
+section#ads {
     display: flex;
     justify-content: center;
 }
 
-#ads > section {
-box-sizing: border-box;
-position: relative;
- width: 285px;
- height: 216px;
- border: 1px solid silver;
- margin: 10px;
- top: -100px;
- left: 2px;
- padding: 12px;
- background: linear-gradient(69deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 67%);
- border-top-right-radius: 15px;
+section#ads section {
+    position: relative;
+    width: 290px;
+    height: 216px;
+    border: 0.5px solid lightgrey;
+    margin-right: 15px;
+    top: -90px;
+    right: -7px;
+    padding: 12px;
+    background: linear-gradient(69deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 67%);
+    border-top-right-radius: 15px;
 }
 
-#ads > section > h3 {
+#ads section h3 {
     position: relative;
     top: -15px;
     font-size: 15px;
@@ -214,48 +209,57 @@ position: relative;
     padding-bottom: 10px;
 }
 
-
-#ads > section#stations-map #map-img {
-   position: relative;
-   top: -30px;
-   left: -170px;
-}
-
-#stations-map  #locations-text {
+figure.ads-img {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
-#stations-map #locations-text > .locations {
+figure.ads-img img {
     position: relative;
-    top: -190px;
-    padding: 5px;
+    top: -15px;
 }
 
-#credit-card #card-pic,
-#changing-content #changing-img {
+.ads-img-txt a {
+    display: flex;
     position: relative;
-    top: -18px; 
+    right: 140px;
 }
 
-#credit-card #credit-card-text,
-#changing-content #changing-text {
-    position: relative;
-    left: -140px;
+figure#our-locations {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-#credit-card #credit-card-text a,
-#changing-content #changing-text a,
-#our-locations #locations-text a {
-    font-size: 13px;
+figure#our-locations img#map-img {
+    position: relative;
+    bottom: 27px;
+}
+
+#locations-img-txt a{
+    display: flex;
+    position: relative;
+    left: 130px;
+}
+
+figcaption.ads-img-txt a,
+figcaption#locations-img-txt a {
+    padding: 10px;
     color: grey;
+    font-size: 13px;
 }
 
-#credit-card #credit-card-text a:hover,
-#changing-content #changing-text a:hover,
-#our-locations #locations-text a:hover {
-   color: #005ca0; 
+figcaption .more-details-img {
+   position: relative;
+   color: #FF4500;
+   top: 1px;
+   right: 6px;
+   transform: rotate(270deg);
 }
 
+figcaption.ads-img-txt a:hover,
+figcaption#locations-img-txt a:hover {
+    color: #005ca0;
+}
 /* Footer */
 footer {
     position: absolute;
@@ -265,26 +269,26 @@ footer {
     background: linear-gradient(0deg, rgba(152,152,152,1) 78%, rgba(192,192,192,1) 92%);
 }
 
-#footer-nav > ul {
+#footer-nav > ul#bottom-menu {
     display: flex;
     justify-content: center;
 }
 
-#footer-nav > ul li{
-   list-style: none;
+#footer-nav > ul#bottom-menu li {
     margin-right: 6px;
 }
-.bottom-items > a {
+
+.bottom-items > a.bottom-links {
     font-size: 14px;
     color: white;
     text-decoration: none;
 }
 
-.bottom-items > a:hover {
+.bottom-items > a.bottom-links:hover {
     color: #005ca0;
     text-decoration: underline;
 }
 
-#bottom-menu > .seperator {
+#bottom-menu > .bottom-seperator {
     color: white;
 }
