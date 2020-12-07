@@ -7,7 +7,7 @@ let index = 0;
 
  window.onload = () => setInterval(() => {
     index++;
-    if (index == images.length) {
+    if (index === images.length) {
         index = 0;
     }
     const changingImg = document.getElementById('changing-img');

@@ -312,8 +312,12 @@ article#breadcrumps {
     width: 180px;
     font-size: 12px;
     color: #5c5c5c;
-    text-decoration: none;
     margin-top: 20px;
+}
+
+article#breadcrumps a {
+    color: #5c5c5c;
+    text-decoration: none;
 }
 
 section#content h1#form-title {
